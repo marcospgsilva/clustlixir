@@ -23,7 +23,7 @@ defmodule Clustlixir.Application do
 
   defp topologies do
     [
-      example: [
+      clustlixir: [
         strategy: Cluster.Strategy.Epmd,
         config: [
           hosts: [
