@@ -1,21 +1,9 @@
 # Clustlixir
+Using libcluster in order to create a Elixir cluster and GenServer for node connection monitoring.
 
-**TODO: Add description**
+![clustlixir](https://user-images.githubusercontent.com/19523657/213338830-2719cfa9-4e8c-47d8-abb4-5c10c62d3f56.gif)
 
-## Installation
+# Try it
+Run `mix deps.get` and then `iex -name n1@127.0.0.1 --cookie secret_token -S mix` in the first node/terminal and `iex -name n2@127.0.0.1 --cookie secret_token -S mix` in the second one.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `clustlixir` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:clustlixir, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/clustlixir](https://hexdocs.pm/clustlixir).
-
+Now, just run `Clustlixir.Ping.ping()` or kill one of those nodes/terminals, and see the magic happen.
